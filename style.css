@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    height:100vh;
+    background-color:#f4e4ba;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#main-container{
+    height:70vh;
+    width:70vh;
+    background-color: #fff;
+    border-radius:10px;
+}
+#title{
+    height:4rem;
+    width:100%;
+}
+#icon{
+    height:10rem;
+    width:100%;
+}
+#mycitycheck{
+    height:2.5rem;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#result{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
