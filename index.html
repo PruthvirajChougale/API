@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="main-container">
-        <div id="title"></div>
-        <div id="icon"></div>
-        <div id="mycitycheck">
+        <div class="content" id="title">
+            <h2> Weather Updates</h2>
+        </div>
+        <div class="content" id="icon">
+            <i class="fa-solid fa-cloud-sun"></i>
+        </div>
+        <div class="content" id="mycitycheck">
             <input id="searchweather" type="text" placeholder="city">
             <button id="search">search</button>
+            <button id="refresh">Refresh</button>
     
         </div>
         <div id="result">
-            <div class="cityresult"></div>
-            <div class="cityresult"></div>
-            <div class="cityresult"></div>
-            <div class="cityresult"></div>
+            <div class="cityresult" id="temp">
+                <P>Temperature : </P>
+            </div>
+            <div class="cityresult" id="feelslike">
+                <p>Feels like : </p>
+            </div>
+            <div class="cityresult" id="humidity">
+                <p>Humidity : </p>
+            </div>
+            <div class="cityresult" id="weather">
+                <p>Weather : </p>
+            </div>
         </div>
     </div>
 

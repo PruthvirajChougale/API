@@ -4,7 +4,8 @@
 }
 body{
     height:100vh;
-    background-color:#f4e4ba;
+    /* background-color:#f4e4ba; */
+    background-color: rgb(190, 190, 252);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -14,24 +15,58 @@ body{
     width:70vh;
     background-color: #fff;
     border-radius:10px;
+    display:grid;
+    grid-template-rows: 1fr 4fr 1fr 4fr;
+}
+.content{
+    display:flex;
+    align-items:center;
+    justify-content:center;  
 }
 #title{
-    height:4rem;
     width:100%;
 }
 #icon{
-    height:10rem;
     width:100%;
+    font-size:9rem;
+    color:rgb(255, 162, 0);
 }
 #mycitycheck{
-    height:2.5rem;
     width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+}
+#searchweather{
+    height:1.5rem;
+    padding-left:5px;
+    border:none;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    background-color: #efe8da;
+}
+#search{
+    height:1.43rem;
+    padding:0 5px 0 5px;
+    border:none;
+    color:#fff;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    background-color:#af4d98;
+}
+button:active{
+    transform:scale(1.1);
 }
 #result{
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+.cityresult{
+    border:1px solid #efe1c5;
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:5px;
+}
+p{
+    display:block;
 }
