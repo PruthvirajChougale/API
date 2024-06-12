@@ -27,4 +27,12 @@ click.addEventListener('click',(e)=>{
     checkweather(searchinput);
 });
 
+refresh.addEventListener('click',(e)=>{
+    e.preventDefault();
+    temperature.innerHTML=` <P>Temperature : </P>`;
+    feelslike.innerHTML=` <p>Feels like : </p>`;
+    humidity.innerHTML=`<p>Humidity : </p>`;
+    weather.innerHTML=`<p>Weather : </p>`;
+    cityinput.value='';
 
+})
