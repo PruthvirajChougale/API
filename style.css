@@ -28,7 +28,7 @@ body{
 }
 #icon{
     width:100%;
-    font-size:9rem;
+    font-size:25vh;
     color:rgb(255, 162, 0);
 }
 #mycitycheck{
@@ -78,4 +78,23 @@ button:active{
 }
 p{
     display:block;
+}
+
+@media (max-width:480px){
+    #result{
+        width:100%;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (orientation:landscape){
+    #icon{
+        font-size:25vh;
+    }
+}
+@media (orientation:portrait){
+    #icon{
+        font-size:40vw;
+    }
 }
